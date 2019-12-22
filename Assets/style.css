@@ -1,42 +1,136 @@
-#header {
-  background-color: #ffffff;
-  font-family: 'Georgia',Times,'Times New Roman',serif;
-  border-color: #4aaaa5;
-  
-}
-
-nav {
-float: right;
+html {
+  height: 100%
 
 }
 
 body {
-  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-  font-size: 18px;
-  color: #777;
-  width: 960px;
-  margin-left: 200px;
-  margin-right: 230px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  background-image: url(dot-grid.png);
+  color: #777777;
+  height: 100%;
+  margin: 0;
+}
+
+header {
+  background-color: #ffffff;
+  border-bottom-color: #cccccc;
+  border-bottom: solid;
+  width: 100%;
+  height: 85px;
+  margin: 0px;
 
 }
 
-.paragraph {
+h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: teal
+}
+
+#name {
+  background: teal;
+  color: white;
+  position: absolute;
+  padding: 25px;
+  top: -21px;
+  left: 380px;
+  margin-bottom: 0px;
+
+}
+a:link {
+  text-decoration: none;
+  color: #777777;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #777777
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+
+}
+
+nav {
+  float:right;
+  list-style-type: none;
+  overflow: hidden;
+  padding: 34px;
+  margin-right: 345px;
+  color: lightgray;
+  font-size: medium;
+
+}
+
+#about, #separator1, #portfolio, #separator2, #contact {
   display: inline;
-  padding-left: 30px;
-}
-
-
-#middle img{ 
-  display: inline-block;
-  float: left;
-  width: auto;
-}
-
-section {
-  display:block;
-}
-
-footer {
-  display: inline-block;
   text-align: center;
+  text-decoration: none;
 }
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.middle {
+  background: #ffffff;
+  padding: 30px;
+  border: 1px solid #dddddd;
+  width: 929px;
+  margin: 0 auto 30px auto
+}
+
+.paragraph1 {
+  display: block;
+
+}
+
+#footer { 
+  background: #666666;
+  border-top: 8px solid #4aaaa5;
+  padding: 30px;
+  text-align: center;
+  font-size: x-small;
+  max-width: 100%;
+  
+}
+
+input {
+
+  width:100%;
+  padding: 5px;
+  margin-top: 5px;
+
+}
+
+#message {
+  
+  width:100%;
+  padding: 5px 5px 100px 5px;
+  margin-top: 5px;
+}
+
+#submit {
+
+  background-color: #4aaaa5;
+  border: none;
+  color: white;
+  padding: 16px 25px;
+  text-decoration: none;
+  margin: auto;
+  cursor: pointer;
+  width: 12%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: left;
+  font-size: larger;
+
+
+}
+
